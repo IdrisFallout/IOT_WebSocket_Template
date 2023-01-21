@@ -16,30 +16,15 @@ The project is mainly involved in showing how to setup a simple serial communica
 Here i chose to send ultrasonic sensor data but you can send any message.
 This is the actual arduino template to send a simple message to the esp8266
 ```cpp
- // Arduino UNO code
- #define TRIGGER_PIN 6
-#define ECHO_PIN 7
-
-long duration;
-int distance;
-
+// Arduino UNO code
 void setup() {
-  pinMode(TRIGGER_PIN, OUTPUT);
-  pinMode(ECHO_PIN, INPUT);
+  // Initialize serial communication
   Serial.begin(9600);
 }
 
 void loop() {
-  digitalWrite(TRIGGER_PIN, LOW);
-  delayMicroseconds(2);
-  digitalWrite(TRIGGER_PIN, HIGH);
-  delayMicroseconds(10);
-  digitalWrite(TRIGGER_PIN, LOW);
-  duration = pulseIn(ECHO_PIN, HIGH);
-  distance = (duration / 2) / 29.1;
-  Serial.println(distance);
-  delay(100);
+  Serial.println("Hello from Arduino Uno");
+  delay(1000);
 }
-
 
 ```
