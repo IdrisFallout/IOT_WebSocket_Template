@@ -51,3 +51,8 @@ void loop() {
   }
 }
 ```
+
+# Finalizing
+The reason why this project is quit important is beacause it set basis for powerful iot project(atleast in my head it does) including:
+- Remote data monitoring
+- IOT system management etc.
