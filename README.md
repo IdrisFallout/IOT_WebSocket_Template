@@ -28,3 +28,28 @@ void loop() {
 }
 
 ```
+The arduino sends `Hello from Arduino Uno` to the serial monitor after every second
+
+### [Esp8266Code](esp8266Code/esp8266Code.ino)
+The actual template without the sensor data
+
+```cpp
+#include <SoftwareSerial.h>
+
+SoftwareSerial espSerial(D1, D2);
+
+void setup() {
+  Serial.begin(115200);
+  espSerial.begin(9600);
+}
+
+void loop() {
+  if (espSerial.available()) {
+    message = espSerial.readStringUntil("\r");
+    Serial.println(message);
+  }
+}
+
+
+
+```
