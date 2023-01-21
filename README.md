@@ -49,7 +49,4 @@ void loop() {
     Serial.println(message);
   }
 }
-
-
-
 ```
