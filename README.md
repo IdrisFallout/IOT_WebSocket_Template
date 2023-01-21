@@ -15,7 +15,7 @@ The project is mainly involved in showing how to setup a simple serial communica
 ### [ArduinoCode](ArduinoCode/ArduinoCode.ino)
 Here i chose to send ultrasonic sensor data but you can send any message.
 This is the actual arduino template to send a simple message to the esp8266
-```
+```cpp
  // Arduino UNO code
  #define TRIGGER_PIN 6
 #define ECHO_PIN 7
