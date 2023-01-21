@@ -34,6 +34,7 @@ The arduino sends `Hello from Arduino Uno` to the serial monitor after every sec
 The actual template without the sensor data
 
 ```cpp
+// esp8266 code
 #include <SoftwareSerial.h>
 
 SoftwareSerial espSerial(D1, D2);
